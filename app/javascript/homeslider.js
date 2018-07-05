@@ -1,5 +1,0 @@
-function homeSlider() {
-
-}
-
-export { homeSlider };
