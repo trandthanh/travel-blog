@@ -1,1 +1,11 @@
-// Specific CSS for your home-page
+.home-banner {
+  background-image: image-url("deathvalley.JPG");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.home-featured {
+  height: 100vh;
+  color: white;
+}
