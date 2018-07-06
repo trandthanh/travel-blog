@@ -1,0 +1,14 @@
+<div class="country-grid">
+
+  <%= link_to country_path(@homecountries[0].country_name.downcase) do %>
+    <div class="one">
+      <%= @homecountries[0].country_name %>
+    </div>
+  <% end %>
+
+  <div class="two">
+    <%= @homecountries[1].country_name %>
+  </div>
+  <div class="three"></div>
+</div>
+
