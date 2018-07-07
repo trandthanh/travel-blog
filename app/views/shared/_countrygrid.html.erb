@@ -1,12 +1,12 @@
 <div class="country-grid">
 
   <%= link_to country_path(@homecountries[0].country_name.downcase) do %>
-    <div class="one">
+    <div class="one" style="background-image: url(<%= asset_path "#{@homecountries[0].country_name.downcase}-card.jpg" %>)">
       <%= @homecountries[0].country_name %>
     </div>
   <% end %>
 
-  <div class="two">
+  <div class="two" style="background-image: url(<%= asset_path "#{@homecountries[1].country_name.downcase}-card.jpg" %>)">
     <%= @homecountries[1].country_name %>
   </div>
   <div class="three"></div>
