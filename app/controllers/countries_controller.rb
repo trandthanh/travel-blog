@@ -10,10 +10,4 @@ class CountriesController < ApplicationController
     @country = Country.where(country_name: @country_name)
   end
 
-  private
-
-  def country_params
-    params.require
-  end
-
 end
