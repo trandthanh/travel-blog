@@ -12,3 +12,21 @@
   height: 100vh;
   color: white;
 }
+
+.home-banner-legend {
+  background-color: white;
+
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: flex-end;
+
+  padding-right: 10px;
+
+  i {
+    margin-right: 10px;
+  }
+
+}
