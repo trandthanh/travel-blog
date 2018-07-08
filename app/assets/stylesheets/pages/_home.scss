@@ -11,6 +11,14 @@
 .home-featured {
   height: 100vh;
   color: white;
+
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 200px;
+
+  h1 {
+    text-shadow: 0.25rem -0.25rem rgba($travel-pink, 1), -0.25rem -0.25rem rgba($travel-blue, 1);
+  }
 }
 
 .home-banner-legend {

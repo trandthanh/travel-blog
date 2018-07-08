@@ -36,10 +36,12 @@ p.navbar-item {
   font-weight: 500;
   color: black;
 
-  width: 130px;
+  width: 150px;
 
-  margin-left: 30px;
-  margin-right: 30px;
+  text-align: center;
+
+  // margin-left: 50px;
+  // margin-right: 50px;
 
   &:hover {
     color: $travel-pink;
@@ -53,6 +55,8 @@ h1.logo {
   color: black;
 
   margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 
   animation: move linear 3000ms infinite;
 }
@@ -115,3 +119,70 @@ h1.logo {
   }
 }
 
+
+// Dropdown Menu
+
+.navbar-dropdown ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-dropdown ul a
+{
+  display:block;
+  color: white;
+  text-decoration:none;
+  font-weight:300;
+  font-size:15px;
+  line-height:32px;
+}
+
+.navbar-dropdown ul li
+{
+  position:relative;
+  float: left;
+  margin:0;
+  padding:0
+}
+
+.navbar-dropdown ul li:hover
+{
+  // background:#f6f6f6
+}
+
+.navbar-dropdown ul ul
+{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background-color: $travel-pink;
+  padding:0;
+  text-align: center;
+}
+
+.navbar-dropdown ul ul li
+{
+  float: none;
+  width: 150px;
+}
+
+.navbar-dropdown ul ul a
+{
+  line-height:120%;
+  padding:10px 15px
+}
+
+.navbar-dropdown ul ul ul
+{
+  top:0;
+  left: 100%
+}
+
+.navbar-dropdown ul li:hover > ul
+{
+  display:block
+}
