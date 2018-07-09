@@ -1,14 +1,22 @@
 <div class="country-grid">
 
-  <%= link_to country_path(@homecountries[0].country_name.downcase) do %>
-    <div class="one" style="background-image: url(<%= asset_path "#{@homecountries[0].country_name.downcase}-card.jpg" %>)">
-      <%= @homecountries[0].country_name %>
+  <div class="square-one"></div>
+
+  <%= link_to country_path(@homecountries[0].country_name.downcase), class: "one" do %>
+    <div class="img-one" style="background-image: url(<%= asset_path "#{@homecountries[0].country_name.downcase}-card.jpg" %>)">
+      <%#= @homecountries[1].country_name %>
     </div>
   <% end %>
 
-  <div class="two" style="background-image: url(<%= asset_path "#{@homecountries[1].country_name.downcase}-card.jpg" %>)">
-    <%= @homecountries[1].country_name %>
-  </div>
+  <div class="text-one"><h1>2. Swim in the Malaysian seaside.</h1></div>
+
+  <%= link_to country_path(@homecountries[1].country_name.downcase), class: "two" do  %>
+    <div class="img-two" style="background-image: url(<%= asset_path "#{@homecountries[1].country_name.downcase}-card.jpg" %>)">
+      <%#= @homecountries[1].country_name %>
+    </div>
+  <% end %>
+
+  <div class="text-two"><h1>1. Stroll along the Italian river.</h1></div>
 
   <div class="three"></div>
 
