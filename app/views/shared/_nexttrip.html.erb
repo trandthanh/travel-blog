@@ -1,0 +1,18 @@
+<div class="home-nexttrip">
+
+  <div class="postit">
+    <h3>Upcoming trip!!</h3>
+    <h2>Québec, Canada (July 2018)</h2>
+  </div>
+
+  <div class="nexttrip-feature">
+    <%= link_to trip_path(@hometrips[1].url) do  %>
+      <div class="nexttrip-image" style="background-image: url(<%= asset_path "#{@hometrips[1].url}-card.jpg" %>)"></div>
+    <% end %>
+
+    <div class="nexttrip-legend">
+      <p>La Gaspésie</p>
+    </div>
+  </div>
+
+</div>

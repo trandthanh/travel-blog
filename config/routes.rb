@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :trips, only: [:index]
 
   get 'countries/:country_name', to: 'countries#show', as: :country
+  get 'trips/:url', to: 'trips#show', as: :trip
 
 
 end

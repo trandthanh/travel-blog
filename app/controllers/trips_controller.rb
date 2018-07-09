@@ -4,5 +4,9 @@ class TripsController < ApplicationController
     @trips = Trip.all
   end
 
+  def show
+    @trip_url = params[:url]
+    @trip = Trip.where(url: @trip_url)
+  end
 
 end

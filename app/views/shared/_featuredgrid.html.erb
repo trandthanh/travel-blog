@@ -1,0 +1,38 @@
+<div class="home-featured">
+  <div class="featured-right">
+    <div class="text-right">
+      <p>Souvenir from Asia -</p>
+      <h1>Tanning in <%= @homecountries[0].country_name %></h1>
+    </div>
+
+    <%= link_to country_path(@homecountries[0].country_name.downcase) do  %>
+      <div class="image-right" style="background-image: url(<%= asset_path "#{@homecountries[0].country_name.downcase}-card.jpg" %>)"></div>
+    <% end %>
+  </div>
+
+  <div class="featured-left">
+    <%= link_to country_path(@homecountries[1].country_name.downcase) do %>
+      <div class="image-left" style="background-image: url(<%= asset_path "#{@homecountries[1].country_name.downcase}-card.jpg" %>)"></div>
+    <% end %>
+
+    <div class="text-left">
+      <p>Souvenir from Europe -</p>
+      <h1>Strolling in <%= @homecountries[1].country_name %></h1>
+    </div>
+  </div>
+
+  <div class="featured-right">
+    <div class="text-right">
+      <p>Souvenir from North America -</p>
+      <h1>Driving across <%= @hometrips[0].trip_name %></h1>
+    </div>
+
+    <%= link_to trip_path(@hometrips[0].url) do  %>
+      <div class="image-right" style="background-image: url(<%= asset_path "#{@hometrips[0].url}-card.jpg" %>)"></div>
+    <% end %>
+  </div>
+</div>
+
+
+
+
