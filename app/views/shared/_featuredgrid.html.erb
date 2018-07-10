@@ -1,5 +1,8 @@
 <div class="home-featured">
+
   <div class="featured-right">
+    <div class="drawing-left" style="background-image: url(<%= asset_path "#{@homecountries[0].country_name.downcase}-drawing.png" %>)"></div>
+
     <div class="text-right">
       <p>Souvenir from Asia -</p>
       <h1>Tanning in <%= @homecountries[0].country_name %></h1>
@@ -18,13 +21,19 @@
     <div class="text-left">
       <p>Souvenir from Europe -</p>
       <h1>Strolling in <%= @homecountries[1].country_name %></h1>
+
+
+    <div class="drawing-right" style="background-image: url(<%= asset_path "#{@homecountries[1].country_name.downcase}-drawing.png" %>)"></div>
     </div>
+
   </div>
 
   <div class="featured-right">
     <div class="text-right">
       <p>Souvenir from North America -</p>
       <h1>Driving across <%= @hometrips[0].trip_name %></h1>
+
+      <div class="drawing-left" style="background-image: url(<%= asset_path "#{@hometrips[0].url}-drawing.png" %>)"></div>
     </div>
 
     <%= link_to trip_path(@hometrips[0].url) do  %>

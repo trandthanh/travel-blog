@@ -9,6 +9,22 @@
   justify-content: flex-end;
 }
 
+.drawing-left {
+  height: 400px;
+  width: 400px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.drawing-right {
+  height: 200px;
+  width: 300px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .image-right {
   background-position: center;
   background-size: cover;
