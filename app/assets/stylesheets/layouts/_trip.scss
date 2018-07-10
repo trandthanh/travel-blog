@@ -1,0 +1,126 @@
+.trip-banner {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 70px;
+
+  box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.3), 0px 3px 10px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0.8);
+  border: 10px solid white;
+}
+
+.trip-title {
+  margin-top: 40px;
+
+  h1 {
+    text-shadow: 0.25rem -0.25rem rgba($travel-pink, 1), -0.25rem -0.25rem rgba($travel-blue, 1);
+    font-size: 80px;
+  }
+}
+
+.trip-map {
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+
+  iframe {
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.3), 0px 3px 10px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0.8);
+    border: 10px solid white;
+  }
+}
+
+.marker-legend {
+  height: 200px;
+  width: 300px;
+  float: right;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.postit-trip {
+  margin-left: 140px;
+  margin-top: 70px;
+
+  height: 300px;
+  width: 600px;
+
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-left: 40px;
+
+  background-color: #ffc;
+
+  border-bottom-right-radius: 60px 5px;
+
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+
+  -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+
+  a {
+    font-family: "Reenie Beanie";
+    font-size: 30px;
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+      color: black;
+      opacity: 0.7;
+    }
+  }
+}
+
+.postit-item {
+  font-family: "Reenie Beanie";
+  font-size: 30px;
+  color: black;
+
+  // &:hover {
+  //   padding: 5px;
+  //   box-shadow: 3px 0px 3px $travel-pink, -3px 0px 3px $travel-pink, 6px 0px 6px $travel-pink, -6px 0px 6px $travel-pink;
+  //   background-color: $travel-pink;
+  //   opacity: 0.3;
+  // }
+
+  a {
+    text-decoration: none;
+    z-index: 10;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+  }
+}
+
+.highlight {
+  &:hover {
+    background-color: #fff2ac;
+    background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+  }
+}
+
+.paper {
+  margin-top: 80px;
+  margin-left: 300px;
+  margin-right: 80px;
+
+  background-color: $light-gray;
+
+  height: 200vh;
+  width: 1000px;
+  box-shadow: 0px 8px 10px rgba(0,0,0,0.15), 0px 8px 10px rgba(0,0,0,0.15), 0px 8px 10px rgba(0,0,0,0.15);
+}
+
+
